@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>User Detail</h2>
+  <p>Name: {{ user.name }}</p>
+  <p>Email: {{ user.email }}</p>
+  <a href="{% url 'parser:user_list' %}">Back to User List</a>
+{% endblock %}
+
